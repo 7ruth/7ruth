@@ -1,0 +1,257 @@
+html {
+    background-color:white;
+    font-family: Helvetica, Arial;
+    font-size:16px;
+    overflow:hidden;
+}
+
+body {
+    margin:0;
+    padding:0;
+
+}
+
+#container {
+  background: url(../images/CLOUDS_Original.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+/*Introduction is a div in which Name and Tagline are held */
+
+            .Introduction, .Introduction:before, .Introduction:after {
+              position: fixed;
+              z-index:100;
+              top:65%;
+              text-align: center;
+              padding:1%;
+              font-family: 'Lato';
+              color: #ffffff;
+              display: inline-block;
+              }
+
+          .Introduction:after {
+            content: "Chartered Financial Analyst's \A Venture into the Tech World";
+            opacity: 0;
+            font-size: 48px;
+            text-align: center;
+            width:100%;
+          }
+
+          .Introduction:before {
+            content: "Martin Terskin";
+            opacity: 1;
+            font-size: 69px;
+            text-align: center;
+            width:100%;
+          }
+
+          .Introduction:before, .Introduction:after {
+            transition: opacity 0.5s linear;
+          }
+
+          .Introduction:hover:before {
+            opacity: 0;
+          }
+
+          .Introduction:hover:after {
+            opacity: 1;
+          }
+
+/*Pop out effect for a div  */
+
+          .popup {
+            height: 48px;
+            width: 48px;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+          }
+          .popup img {
+            border-radius: 50%;
+            margin: 0.3em;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+          }
+          .popup img:hover {
+            margin: 0px;
+            box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+          }
+
+/*Positions for pop ups - social media/online presence links*/
+
+          #links {
+            position:fixed;
+            top:5%;
+            width:100%;
+            height:25%;
+          }
+
+          .linkedin img {
+              position: absolute;
+              top:85%;
+              left:5%;
+              width:5%;
+              transition: all ease
+          }
+
+          .twitter img {
+              position: absolute;
+              top:35%;
+              left:3%;
+              width:3%;
+              transition: all ease
+          }
+
+          .github img {
+              position: absolute;
+              top:0%;
+              left:1%;
+              width:2%;
+              transition: all ease
+          }
+
+/* Code to position Resume Bullets */
+
+          .label1 {
+              position: fixed;
+              width:10%;
+              height:10%;
+              left:50%;
+              top:50%;
+              padding:25px;
+              text-align: center;
+              font-family: Helvetica Neue;
+              font-size: 12px;
+              line-height: 14px;
+              color:#aaa;
+              -webkit-user-select:none;
+              -moz-user-select:none;
+              }
+
+          .label2 {
+              position: fixed;
+              width: 3px;
+              height: 3px;
+              left:50%;
+              top:50%;
+              padding:10px;
+              font-family: Helvetica Neue;
+              font-size: 12px;
+              line-height: 14px;
+              border-radius:50%;
+              background-image: url("../images/PalantirV3.png");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              -webkit-user-select:none;
+              -moz-user-select:none;
+              }
+
+          .pulse {  cursor: pointer;
+                        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+                        animation: pulse 0.5s infinite;
+                      }
+
+
+
+          @keyframes pulse {
+            0% {-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+              box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);}
+            70% {-moz-box-shadow: 0 0 0 35px rgba(255,255,255, 0);
+                box-shadow: 0 0 0 10px rgba(255,255,255, 0);}
+            100% {-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+                -shadow: 0 0 0 0 rgba(255,255,255, 0);}}
+
+
+          .pulse2 {  cursor: pointer;
+                        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+                        animation: pulse 1s infinite;
+                      }
+
+
+            @keyframes pulse {
+              0% {-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+                box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);}
+              70% {-moz-box-shadow: 0 0 0 55px rgba(255,255,255, 0);
+                  box-shadow: 0 0 0 10px rgba(255,255,255, 0);}
+              100% {-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+                  -shadow: 0 0 0 0 rgba(255,255,255, 0);}}
+
+
+           .resume1 {
+                    visibility: hidden;
+                    position: relative;
+                    top:20%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80%;
+                    height: 60%;
+                    background-color:white;
+                    border-radius: 5%;
+                    }
+
+            .resume2 {
+
+                    background-color:white;
+                    font-size:16px;
+                    overflow:hidden;
+                    left:540px;
+                    top:570px;
+                    padding:10px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    position: absolute;
+                    width: 100px;
+                    height: 60px;
+                    }
+
+/*Sparkle Effect for label1 Div												*/
+                    .sparkle{
+                    width:20px;
+                    height:20px;
+                    background-color:red;
+                    position:relative;
+                    margin:20%;
+                    box-shadow:0 0 0px 0px rgba(0,0,0,.5);
+                    background:url(http://i.imgur.com/2T5M8.png?1);
+                     -webkit-animation:
+                      sparkle .5s infinite steps(1),
+                      movetop 2.5s infinite steps(1),
+                      moveleft 3.5s infinite steps(1)
+                    }
+
+
+                    @keyframes sparkle {
+                      0%, 100%{background-position:0px 0}
+                      20%{background-position:20px 0}
+                      40%{background-position:40px 0}
+                      60%{background-position:60px 0}
+                      80%{background-position:80px 0}
+                    }
+                    @keyframes movetop {
+                      0%, 100%{top:0;}
+                      20%{top:-20px;}
+                      40%{top:20px;}
+                      60%{top:40px;}
+                      80%{top:-40px}
+                    }
+
+                    @keyframes moveleft {
+                      0%, 100%{left:50px}
+                      14.28%{ left:0px}
+                      28.57%{ left:70px}
+                      42.85%{ left:20px}
+                      57.14%{ left:5px}
+                      71.42%{ left:50px}
+                      85.71%{ left:60px}
+
+                    }
