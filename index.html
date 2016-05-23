@@ -1,119 +1,108 @@
-<!-- CAN TRY FLEXBOXES FOR floating content:
-
-.vertical-container {
-  height: 300px;
-  display: -webkit-flex;
-  display:         flex;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-}   http://learnlayout.com/flexbox.html    -->
-
-
-<html><head>
-		<title>Martin Terskin</title>
-
-		        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-            <script type="text/javascript" src="js/zoomjs.js"></script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf-D4jyfaLB1XuJwyoGzCmrQy_Nn1H07s&signed_in=true&callback=initialize"></script>
-						<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-						<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="css/css.css">
-
-
-				<!-- Optimizing for Mobile -->
-
-				<meta name="viewport" content="width=500px, user-scalable=0, maximum-scale=1;">
-
-	</head>
-
-	<!--NECK HAAHAHAHHAHAH HEHEHEH -->
-
-	    <body cz-shortcut-listen="true">
-
-        <div id="container">
-
-          <div class="Introduction">  </div>
-
-						<div id="links">
-
-    								 <div id="linkedin" class="linkedin popup">
-
-                           <a href="https://www.linkedin.com/in/martin-terskin-cfa-44b431a?trk"> <img src="images/Untitled28.png" />
-                           </a>
-
-                        </div>
-
-                    <div class="twitter popup">
-
-                           <a href="https://twitter.com/RUEXPed"> <img src="images/UranusTwitterV2.png" />
-                           </a>
-
-                        </div>
-
-                    <div class="github popup">
-
-                           <a href="https://github.com/7ruth"> <img src="images/PlutoGithub.png" />
-                           </a>
-
-                        </div>
-
-										</div>
-
+<!DOCTYPE>
+<html>
+<head>
+	<title>Martin Terskin</title>
+		<!-- Zoom library - ZoomZoomJS - http://jaukia.github.io/zoomooz/ -->
+		<script type="text/javascript" src="js/zoomjs.js"></script>
+		<!-- Shake library - jQuery iOS Shake Detector - https://github.com/lhagan/jquery.ios-shake -->
+		<script type="text/javascript" src="js/jquery.ios-shake.js"></script>
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Mobile Specs -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1;">
+</head>
+<body>
+	<div id="container">
+    <div class="introduction"> <!-- Martin Terskin / ROI Minded CFA Turned Full Stack Developer - controller by CSS --> </div>
+		<div class="shakeMessage"> Shake --> Sample Projects </div>
+		<div  class="theSun popup">
+		 <img src="images/Edit_oie_23221042gJmAzcN6.gif" alt="the Sun" />
+			</a>
+		</div>
+			<div class="portfolio">
+			  <ul>
+			    <li>
+						<a href="http://7ruth.github.io/arithmeticGame/" style= "text-decoration: inherit; color: inherit;";>
+				      <img src="http://vignette4.wikia.nocookie.net/adventuretimewithfinnandjake/images/c/cf/Finn.png/revision/latest?cb=20121022153101" >
+					      <h3>Algebraic!</h3>
+				      <p>A game that will keep your head sharp</p>
+						</a>
+			    </li>
+			    <li>
+						<a href="http://7ruth.github.io/tic_tac_toe/" style= "text-decoration: inherit; color: inherit;";>
+				      <img src="https://pixabay.com/static/uploads/photo/2013/07/12/15/56/tic-tac-toe-150614_960_720.png" >
+					      <h3>Scallable Tic Tac Toe</h3>
+				      <p>3x3 is still my fav.</p>
+			    </li>
+			  </ul>
+			</div>
+			<div id="links">
+				<div id="linkedin" class="linkedin popup">
+        	<a href="https://www.linkedin.com/in/martin-terskin-cfa-44b431a?trk">
+						<img src="images/PUntitled28.png" />
+          </a>
+				</div>
+      <div class="twitter popup">
+      	<a href="https://twitter.com/RUEXPed">
+					<img src="images/PUranusTwitterV2.png" />
+        </a>
+      </div>
+      <div class="github popup">
+      	<a href="https://github.com/7ruth">
+					<img src="images/PPlutoGithub.png" />
+				</a>
+			</div>
+		</div>
 <!-- Now the interactive resume portion -->
 
-                   <div id='label1' class='label1' >
-										 				<div class="sparkle"> </div>
-                            <a href="#"></a>
+                <div id='label2' class='label2 pulse' style='display:none;'>
 
-                        </div>
+                    </div>
 
-                    <div id='label2' class='label2 pulse' style='display:none;'>
+                <div id="resume1" class='resume1 pulse2' style='z-index:-100'>
 
-                        </div>
+								</div>
 
-                    <div id="resume1" class='resume1 pulse2' style='z-index:-100'>
+                <div id="resume2" class='resume2' style='display:none;'>
 
-										</div>
-
-                    <div id="resume2" class='resume2' style='display:none;'>
-
-                        </div>
+                    </div>
 
 
 
-        </div>
-
-
-
-        <!--************************
-                **  GOOGLE ANALYTICS      **
-                ************************
-
-                        <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script> <script type="text/javascript"> try { var pageTracker = _gat._getTracker("UA-16288001-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-
-* -->
+    </div>
 
 </body>
 
 <script type="text/javascript">
 
+						var clickCount = 0;
+
             var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
                     if (mobile) {
 
-                        $('body').css('opacity', 0);
-                        $(window).load(function() {
-                          $('body').css('opacity', 1);
-                        });
-
                         $('#label1').css('z-index', '-101'); // OR you can use $('.example').hide();
+												$('#label1').css("visibility", "hidden");
+												$('.theSun').css("visibility", "hidden");
+												$('.shakeMessage').css("visibility", "visible");
 
+												$( window ).on( "orientationchange load", function( event ) {
+													if(window.innerHeight > window.innerWidth){
+														$('.linkedin img').css('width', '20%');
+														$('.twitter img').css('width', '8%');
+														$('.github img').css('width', '14%');
+														$('.portfolio').css('width', '60vw');
+													} else {
+														$('.linkedin img').css('width', '7%');
+														$('.twitter img').css('width', '3%');
+														$('.github img').css('width', '4%');
+														$('.portfolio').css('top', '1%');
+														$('.portfolio').css('width', '80vw');
+													}
+												});
 
                     } else {
 
@@ -130,41 +119,93 @@ pageTracker._trackPageview();
                                     });
                                 }
 
+										$('#container').click(function(evt) {
+		                        evt.stopPropagation();
+
+		                    if ($(evt.target).is('#container')) {
+		                        $('body').zoomTo({targetsize:1});
+														$('.portfolio').css("display", "none");
+														$('.introduction').css("display", "block");
+														$('#label1').css("display", "block");
+		                        $('#label2').css("display", "none");
+		                        $('#resume1').css("visibility", "hidden");
+		                        $('#resume2').css("display", "none");
+														$('.theSun').addClass("popup");
+														clickCount = 0;
+		                    }
+		                });
+
+
                     }
+
+										$('body').css('opacity', 0);
+										$(window).load(function() {
+											$('body').css('opacity', 1);
+										});
 
             $(document).ready(function() {
 
+											function onShake() {
+													changeProduct();
+											}
+
+											$.shake({
+													callback: function() {
+															onShake();
+													}
+											});
+
+									    function changeProduct() {
+													$('.introduction').css("display", "none");
+													$('.shakeMessage').css("display", "none");
+													$('.portfolio').css("position", "fixed");
+													$('.portfolio').css("width", "60vw");
+													$('.portfolio').css("top", "1%");
+													$('.portfolio').css("left", "25vw");
+													$('.portfolio').css("font-size", "10vw");
+													$('.portfolio').css("z-index", "200");
+													$('#links').css("display", "none");
+													$('.portfolio').css("display", "block");
+									    }
+										});
+
                 $.zoomooz.setup({nativeanimation:true, debug:false});
 
-                $('#container').click(function(evt) {
-                        evt.stopPropagation();
+									$('.theSun').click(function(evt) {
 
-                    if ($(evt.target).is('#container')) {
-                        $('body').zoomTo();
-                        $('#label1').css("display", "block");
-                        $('#label2').css("display", "none");
-                        $('#resume1').css("visibility", "hidden");
-                        $('#resume1').css("z-index", "-100");
-                        $('#resume2').css("display", "none");
-                    }
-                });
+									if (clickCount === 1) {
+											evt.stopPropagation();
+
+													$('body').zoomTo({targetsize:1});
+													$('.portfolio').css("display", "none");
+													$('.introduction').css("display", "block");
+													$('#label1').css("display", "block");
+													$('#label2').css("display", "none");
+													$('#resume1').css("visibility", "hidden");
+													$('#resume2').css("display", "none");
+													$('.theSun').addClass("popup");
+													clickCount = 0;
+
+											} else {
+														$('.theSun').removeClass("popup");
+														$('.portfolio').css("display", "block");
+														$('.portfolio').css("z-index", "102");
+														$('.portfolio ul li').zoomTo({duration: 1000, targetsize:.3});
+														clickCount = 1;
+											}
+										});
 
 
-                $('#label1').click(function(evt) {
-                        evt.stopPropagation();
-                        $('#label1').css("display", "none");
-                        $('#label2').css("display", "block");
-												$('#label2').zoomTo({duration:1000, targetsize:0.2});
 
-                });
 
                 $('#label2').click(function(evt) {
-                        evt.stopPropagation();
-                        $('#resume1').css("visibility", "visible");
-                        $('#resume1').css("z-index", "101");
-                        initialize();
-                        $('#resume1').zoomTo({duration:1000,targetsize:0.95});
-                        $('#label2').css("display", "none");
+												window.open("http://7ruth.github.io/arithmeticGame/")
+                        // evt.stopPropagation();
+                        // $('#resume1').css("visibility", "visible");
+                        // $('#resume1').css("z-index", "101");
+                        // initialize();
+                        // $('#resume1').zoomTo({duration:1000,targetsize:0.95});
+                        // $('#label2').css("display", "none");
 
                 });
 
@@ -183,7 +224,7 @@ pageTracker._trackPageview();
                 $(".cover").show();
 
                 */
-            });
+
 
     /* First attempt at Google Maps -----
 
@@ -198,9 +239,10 @@ pageTracker._trackPageview();
               */
 
 
+
         var orbit = function($b,speed){$b.animate({"left": "110%"}, speed, "linear");};
 
-            $(function(){orbit($(".linkedin img"), 100000);});
+            $(function(){orbit($(".linkedin img"), 300000);});
             $(function(){orbit($(".twitter img"), 200000);});
             $(function(){orbit($(".github img"), 500000);});
 

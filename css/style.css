@@ -22,7 +22,7 @@ body {
 
 /*Introduction is a div in which Name and Tagline are held */
 
-            .Introduction, .Introduction:before, .Introduction:after {
+          .introduction, .introduction:before, .introduction:after, .shakeMessage {
               position: fixed;
               z-index:100;
               top:65%;
@@ -30,42 +30,49 @@ body {
               padding:1%;
               font-family: 'Lato';
               color: #ffffff;
-              display: inline-block;
+              display: block;
+              width:40vw;
+              margin-left:15vw;
               }
 
-          .Introduction:after {
-            content: "Chartered Financial Analyst's \A Venture into the Tech World";
+          .shakeMessage {
+            margin-left:10vw;
+            width:80vw;
+            top:90%;
+            visibility:hidden;
+          }
+
+          .introduction:after {
+            content: "ROI Minded CFA Turned \A  Full Stack Developer";
+            font-size: 1.5em;
             opacity: 0;
-            font-size: 48px;
             text-align: center;
-            width:100%;
+
           }
 
-          .Introduction:before {
+          .introduction:before {
             content: "Martin Terskin";
+            font-size: 2em;
             opacity: 1;
-            font-size: 69px;
             text-align: center;
-            width:100%;
           }
 
-          .Introduction:before, .Introduction:after {
+
+          .introduction:before, .introduction:after {
             transition: opacity 0.5s linear;
           }
 
-          .Introduction:hover:before {
+          .introduction:hover:before {
             opacity: 0;
           }
 
-          .Introduction:hover:after {
+          .introduction:hover:after {
             opacity: 1;
           }
 
 /*Pop out effect for a div  */
 
           .popup {
-            height: 48px;
-            width: 48px;
             -webkit-transition: all ease 0.5s;
             -moz-transition: all ease 0.5s;
             -o-transition: all ease 0.5s;
@@ -95,27 +102,82 @@ body {
             height:25%;
           }
 
+          .theSun {
+            overflow:hidden;
+            width:10%;
+          }
+
+         .theSun img, .portfolio {
+              position: absolute;
+              z-index: 101;
+              top:5%;
+              left:5%;
+              width:10%;
+              transition: all ease;
+          }
+
+          .portfolio {
+               font-size: 1vw;
+               color:white;
+               width: 8vw;
+               padding:2.5vh 0 0 0;
+               display:none;
+          }
+
+          .portfolio ul {
+            list-style-type: none;
+            float: left;
+            padding: 0 0 0 2.5vw;
+          }
+
+          .portfolio h3 {
+            font: bold 25%/1.5 Helvetica, Verdana, sans-serif;
+            margin: 6% 2% 2% 2%;
+          }
+
+          .portfolio li img {
+            width: 25%;
+            margin: 5% 5% 5% 5%;
+            float: left;
+          }
+
+          .portfolio li p {
+            font: 200 25%/1.5 Georgia, Times New Roman, serif;
+            margin: 1%;
+          }
+
+          .portfolio li {
+            padding: 1%;
+            overflow: auto;
+            float:left;
+          }
+
+          .portfolio li:hover {
+            color: #00ff94;
+            cursor: pointer;
+          }
+
           .linkedin img {
               position: absolute;
               top:85%;
-              left:5%;
-              width:5%;
+              left:25%;
+              width:7%;
               transition: all ease
           }
 
           .twitter img {
               position: absolute;
-              top:35%;
-              left:3%;
+              top:0%;
+              left:60%;
               width:3%;
               transition: all ease
           }
 
           .github img {
               position: absolute;
-              top:0%;
-              left:1%;
-              width:2%;
+              top:35%;
+              left:55%;
+              width:4%;
               transition: all ease
           }
 
@@ -212,46 +274,4 @@ body {
                     position: absolute;
                     width: 100px;
                     height: 60px;
-                    }
-
-/*Sparkle Effect for label1 Div												*/
-                    .sparkle{
-                    width:20px;
-                    height:20px;
-                    background-color:red;
-                    position:relative;
-                    margin:20%;
-                    box-shadow:0 0 0px 0px rgba(0,0,0,.5);
-                    background:url(http://i.imgur.com/2T5M8.png?1);
-                     -webkit-animation:
-                      sparkle .5s infinite steps(1),
-                      movetop 2.5s infinite steps(1),
-                      moveleft 3.5s infinite steps(1)
-                    }
-
-
-                    @keyframes sparkle {
-                      0%, 100%{background-position:0px 0}
-                      20%{background-position:20px 0}
-                      40%{background-position:40px 0}
-                      60%{background-position:60px 0}
-                      80%{background-position:80px 0}
-                    }
-                    @keyframes movetop {
-                      0%, 100%{top:0;}
-                      20%{top:-20px;}
-                      40%{top:20px;}
-                      60%{top:40px;}
-                      80%{top:-40px}
-                    }
-
-                    @keyframes moveleft {
-                      0%, 100%{left:50px}
-                      14.28%{ left:0px}
-                      28.57%{ left:70px}
-                      42.85%{ left:20px}
-                      57.14%{ left:5px}
-                      71.42%{ left:50px}
-                      85.71%{ left:60px}
-
                     }
